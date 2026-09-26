@@ -1,4 +1,4 @@
-# 🎓 Research Project Website
+# <h1 align="center">🎓 Research Project Website</h1>
 
 <p align="center">
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-Website-black?style=for-the-badge&logo=next.js">
