@@ -1,5 +1,5 @@
 export const site = {
-  projectId: "R26-IT-139", // TODO: Real research project ID
+  projectId: "R26-IT-139",
   title: "Explainable AI for SME Credit & Agency Banking Risk Management", // TODO: Real project title
   subtitle:
     "A machine learning research project combining credit readiness scoring, demand forecasting, procurement risk, and agency banking analytics — each explained with SHAP.", // TODO: Real subtitle
@@ -10,9 +10,12 @@ export const site = {
 
 export const nav = [
   { href: "/", label: "Home" },
-  { href: "/scope", label: "Scope" },
+  { href: "/scope", label: "Domain" },
   { href: "/milestones", label: "Milestones" },
+  { href: "/downloads", label: "Documents" },
+  { href: "/presentations", label: "Presentations" },
   { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export const abstract = {
@@ -135,98 +138,132 @@ export const downloads = [
   },
 ];
 
+export const presentations = [
+  {
+    title: "Proposal Presentation",
+    desc: "Slides used for the proposal defense.", // TODO
+    href: "/presentations/proposal.pdf",
+    available: false,
+  },
+  {
+    title: "Progress Presentation",
+    desc: "Slides used for the mid-evaluation.", // TODO
+    href: "/presentations/progress.pdf",
+    available: false,
+  },
+  {
+    title: "Final Presentation",
+    desc: "Slides used for the final viva.", // TODO
+    href: "/presentations/final.pdf",
+    available: false,
+  },
+];
+
 export const contact = {
-  email: "team@example.com", // TODO: Real email
-  university: "SLIIT", // TODO: Real university/faculty
-  address: "Malabe, Sri Lanka", // TODO: Real address
-  githubOrg: "https://github.com/", // TODO: Real GitHub org/repo link
+  generalEmail: "LankaLink.team@example.com", // TODO: Real team email
+  supervisorEmail: "shanta.y@sliit.lk", // TODO: Real supervisor email (kept in sync with team.supervisors[0].email)
+  institution: "Sri Lanka Institute of Information Technology (SLIIT)", // TODO
+  subjects: [
+    "Select a subject",
+    "General Inquiry",
+    "Research Collaboration",
+    "Technical Support",
+    "Documentation Request",
+    "Collaboration",
+    "Feedback",
+    "Other",
+  ],
 };
 
 export const team = {
   supervisors: [
     {
-      name: "Dr. Shanta Rajapaksha Yapa", 
+      name: "Dr. Shanta Rajapaksha Yapa",
       role: "Supervisor",
-      photo: "/images/supervisor.png", 
+      photo: "/images/supervisor.png",
       university: "Sri Lanka Institute of Information Technology",
       faculty: "Faculty of Business", // TODO
-      department: "Department of Information Management", 
-      email: "shanta.y@sliit.lk", 
-      linkType: "scholar", 
-      link: "https://scholar.google.com/citations?user=hX9X2RYAAAAJ&hl=en", 
+      department: "Department of Information Management",
+      email: "shanta.y@sliit.lk",
+      linkType: "scholar",
+      link: "https://scholar.google.com/citations?user=hX9X2RYAAAAJ&hl=en",
     },
     {
       name: "Ms. Suwani Hettiarachchi",
       role: "Co-Supervisor",
-      photo: "/images/cosupervisor.png", 
-      university: "Sri Lanka Institute of Information Technology", 
-      faculty: "Faculty of Business", 
+      photo: "/images/cosupervisor.png",
+      university: "Sri Lanka Institute of Information Technology",
+      faculty: "Faculty of Business",
       department: "Computer Systems Engineering",
-      email: "suwani.h@sliit.lk", 
+      email: "suwani.h@sliit.lk",
       linkType: "scholar",
-      link: "https://scholar.google.com/citations?user=udSXe-MAAAAJ&hl=en", 
+      link: "https://scholar.google.com/citations?user=udSXe-MAAAAJ&hl=en",
     },
   ],
   members: [
     {
-      name: "Aponsu G.M.P.S", 
+      name: "Aponsu G.M.P.S",
       studentId: "IT22266682",
       role: "Group Member",
       componentRole: "Demand Forecast Component",
       description:
         "TODO: One or two sentences on what this component does and this member's contribution.",
-      tags: ["Forecasting", "Time Series", "TODO Tag"], 
-      photo: "/images/m2.png", 
-      university: "Sri Lanka Institute of Information Technology", 
-      faculty: "Faculty of Computing",  
-      email: "parameeaponsu@icloud.com", 
+      tags: ["Forecasting", "Time Series", "TODO Tag"],
+      photo: "/images/m2.png",
+      university: "Sri Lanka Institute of Information Technology",
+      faculty: "Faculty of Computing",
+      department: "Computer Systems Engineering", // TODO: confirm
+      email: "parameeaponsu@icloud.com",
       linkType: "linkedin",
-      link: "https://www.linkedin.com/in/paramee-aponsu-61b43836a/", 
+      link: "https://www.linkedin.com/in/paramee-aponsu-61b43836a/",
     },
     {
-      name: "PRAMUDITH K G S", 
+      name: "PRAMUDITH K G S",
       studentId: "IT22152978",
       role: "Group Member",
       componentRole: "Inventory and Supplier Management Component",
       description:
-        "TODO: One or two sentences on what this component does and this member's contribution.", 
-      tags: ["Risk Analysis", "TODO Tag"], 
-      photo: "/images/m3.png", 
+        "TODO: One or two sentences on what this component does and this member's contribution.",
+      tags: ["Risk Analysis", "TODO Tag"],
+      photo: "/images/m3.png",
       university: "Sri Lanka Institute of Information Technology",
-      faculty: "Faculty of Computing",  
-      email: "sathirapramudith1@gmail.com", 
+      faculty: "Faculty of Computing",
+      department: "Computer Systems Engineering", // TODO: confirm
+      email: "sathirapramudith1@gmail.com",
       linkType: "linkedin",
-      link: "https://www.linkedin.com/in/sathira-pramudith-805284318/", 
+      link: "https://www.linkedin.com/in/sathira-pramudith-805284318/",
     },
     {
-      name: "Ruwani P A M J", 
+      name: "Ruwani P A M J",
       studentId: "IT22268730",
       role: "Group Member",
       componentRole: "Smart Procurement &  decision Support Component",
       description:
-        "TODO: One or two sentences on what this component does and this member's contribution.", 
-      tags: ["Classification", "SHAP", "TODO Tag"], 
-      photo: "/images/m1.png", 
-      university: "Sri Lanka Institute of Information Technology", 
-      faculty: "Faculty of Computing", 
-      email: "maheshajayaruwani@gmail.com", 
+        "TODO: One or two sentences on what this component does and this member's contribution.",
+      tags: ["Classification", "SHAP", "TODO Tag"],
+      photo: "/images/m1.png",
+      university: "Sri Lanka Institute of Information Technology",
+      faculty: "Faculty of Computing",
+      department: "Computer Systems Engineering", // TODO: confirm
+      email: "maheshajayaruwani@gmail.com",
       linkType: "linkedin",
-      link: "https://www.linkedin.com/in/mahesha-jayaruwani-0507a4362/", 
+      link: "https://www.linkedin.com/in/mahesha-jayaruwani-0507a4362/",
     },
     {
-      name: "Karunaweera L.M", 
+      name: "Karunaweera L.M",
       studentId: "IT22050212",
       role: "Group Leader",
       componentRole: "Simulated Agency Banking Component",
       description:
-        "TODO: One or two sentences on what this component does and this member's contribution.", 
-      tags: ["Classification", "TODO Tag"], 
-      photo: "/images/m4.png", 
-      university: "Sri Lanka Institute of Information Technology", 
-      faculty: "Faculty of Computing", 
-      email: "lakshithakarunaweera@gmail.com", 
+        "TODO: One or two sentences on what this component does and this member's contribution.",
+      tags: ["Classification", "TODO Tag"],
+      photo: "/images/m4.png",
+      university: "Sri Lanka Institute of Information Technology",
+      faculty: "Faculty of Computing",
+      department: "Computer Systems Engineering", // TODO: confirm
+      email: "lakshithakarunaweera@gmail.com",
       linkType: "linkedin",
-      link: "https://www.linkedin.com/in/lakshithakarunaweera/", 
+      link: "https://www.linkedin.com/in/lakshithakarunaweera/",
     },
   ],
 };
