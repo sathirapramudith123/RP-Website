@@ -1,5 +1,5 @@
 export const site = {
-  projectId: "R26-IT-139",
+  projectId: "Lanak Link",
   title: "Explainable AI for SME Credit & Agency Banking Risk Management", // TODO: Real project title
   subtitle:
     "A machine learning research project combining credit readiness scoring, demand forecasting, procurement risk, and agency banking analytics — each explained with SHAP.", // TODO: Real subtitle
@@ -64,12 +64,51 @@ export const components = [
 export const scope = {
   intro:
     "TODO: One or two sentences introducing the research scope and approach.", // TODO
+
+  literatureSurvey: {
+    heading: "Literature Survey",
+    paragraphs: [
+      "TODO: Summarize existing research and systems related to your problem domain. What has already been done, and by whom?",
+      "TODO: Add a second paragraph if needed, covering another angle of prior work (e.g. academic research vs. industry tools).",
+    ],
+  },
+
+  researchGap: {
+    heading: "Research Gap",
+    paragraphs: [
+      "TODO: Explain what is missing in existing solutions — the specific gap your research fills.",
+    ],
+  },
+
+  researchProblem: {
+    heading: "Research Problem",
+    paragraphs: [
+      "TODO: State the core problem your research addresses, in one or two clear sentences.",
+    ],
+  },
+
   objectives: [
     "TODO: Objective 1 — e.g. Develop an explainable credit readiness scoring model.",
     "TODO: Objective 2 — e.g. Build a demand forecasting model for SME inventory planning.",
     "TODO: Objective 3 — e.g. Design a procurement risk assessment component.",
     "TODO: Objective 4 — e.g. Implement an agency banking risk classification model.",
   ],
+
+  methodology: {
+    heading: "Methodology",
+    paragraphs: [
+      "TODO: Describe your overall research approach and process — data collection, model development, evaluation, etc.",
+    ],
+  },
+
+  technologies: [
+    { name: "Python", category: "Language" }, // TODO: real tech stack
+    { name: "TensorFlow", category: "ML Framework" }, // TODO
+    { name: "SHAP", category: "Explainability" }, // TODO
+    { name: "Next.js", category: "Frontend" }, // TODO
+    { name: "TODO Tech", category: "TODO Category" }, // TODO
+  ],
+
   images: [
     { src: "/images/scope/literature_survey.svg", caption: "Literature Survey" }, // TODO: add file to public/images/scope/
     { src: "/images/scope/research_gap.svg", caption: "Research Gap" }, // TODO: add file to public/images/scope/
@@ -160,15 +199,11 @@ export const presentations = [
 ];
 
 export const contact = {
-  generalEmail: "LankaLink.team@example.com", // TODO: Real team email
+  generalEmail: "team@example.com", // TODO: Real team email
   supervisorEmail: "shanta.y@sliit.lk", // TODO: Real supervisor email (kept in sync with team.supervisors[0].email)
   institution: "Sri Lanka Institute of Information Technology (SLIIT)", // TODO
   subjects: [
-    "Select a subject",
     "General Inquiry",
-    "Research Collaboration",
-    "Technical Support",
-    "Documentation Request",
     "Collaboration",
     "Feedback",
     "Other",

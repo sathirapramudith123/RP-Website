@@ -2,29 +2,130 @@ import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
 import { scope, components } from "@/data/content";
 
+function TextSection({
+  heading,
+  paragraphs,
+  image,
+}: {
+  heading: string;
+  paragraphs: string[];
+  image?: { src: string; caption: string };
+}) {
+  return (
+    <div className="mt-12">
+      <h3 className="font-display text-xl font-bold text-slate-900">
+        {heading}
+      </h3>
+      <div className={image ? "mt-5 grid gap-6 md:grid-cols-2 md:items-start" : "mt-4"}>
+        <div className="space-y-3">
+          {paragraphs.map((p, i) => (
+            <p key={i} className="leading-relaxed text-slate-600">
+              {p}
+            </p>
+          ))}
+        </div>
+        {image ? (
+          <figure className="card p-3">
+            <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-slate-100">
+              <Image
+                src={image.src}
+                alt={image.caption}
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+            <figcaption className="mt-3 text-center text-sm font-medium text-slate-600">
+              {image.caption}
+            </figcaption>
+          </figure>
+        ) : null}
+      </div>
+    </div>
+  );
+}
+
 export default function ScopePage() {
+  const findImage = (caption: string) =>
+    scope.images.find((img) => img.caption === caption);
+
   return (
     <div className="container-page py-16">
       <SectionHeader
-        eyebrow="Scope"
+        eyebrow="Domain"
         title="Research Scope & Methodology"
         subtitle={scope.intro}
       />
 
-      <div className="mt-10 card">
-        <h3 className="font-display text-lg font-bold text-slate-900">
-          Objectives
+      <TextSection
+        heading={scope.literatureSurvey.heading}
+        paragraphs={scope.literatureSurvey.paragraphs}
+        image={findImage("Literature Survey")}
+      />
+
+      <TextSection
+        heading={scope.researchGap.heading}
+        paragraphs={scope.researchGap.paragraphs}
+        image={findImage("Research Gap")}
+      />
+
+      <TextSection
+        heading={scope.researchProblem.heading}
+        paragraphs={scope.researchProblem.paragraphs}
+      />
+
+      <div className="mt-12">
+        <h3 className="font-display text-xl font-bold text-slate-900">
+          Research Objectives
         </h3>
-        <ul className="mt-4 space-y-3">
-          {scope.objectives.map((o, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-50 text-xs font-bold text-brand-700">
-                {i + 1}
-              </span>
-              <span className="text-slate-600">{o}</span>
-            </li>
+        <div className="mt-5 card">
+          <ul className="space-y-3">
+            {scope.objectives.map((o, i) => (
+              <li key={i} className="flex gap-3">
+                <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-50 text-xs font-bold text-brand-700">
+                  {i + 1}
+                </span>
+                <span className="text-slate-600">{o}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <TextSection
+        heading={scope.methodology.heading}
+        paragraphs={scope.methodology.paragraphs}
+        image={findImage("Methodology")}
+      />
+
+      <div className="mt-12">
+        <h3 className="font-display text-xl font-bold text-slate-900">
+          Technologies Used
+        </h3>
+        <div className="mt-5 flex flex-wrap gap-3">
+          {scope.technologies.map((t) => (
+            <span
+              key={t.name}
+              className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm"
+            >
+              <span className="font-semibold text-slate-900">{t.name}</span>
+              <span className="text-xs text-slate-400">{t.category}</span>
+            </span>
           ))}
-        </ul>
+        </div>
+        {findImage("Technologies Used") ? (
+          <figure className="card mt-6 max-w-md p-3">
+            <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-slate-100">
+              <Image
+                src={findImage("Technologies Used")!.src}
+                alt="Technologies Used"
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+          </figure>
+        ) : null}
       </div>
 
       <div className="mt-12">
@@ -51,33 +152,6 @@ export default function ScopePage() {
             </div>
           ))}
         </div>
-      </div>
-
-      <div className="mt-12">
-        <h3 className="font-display text-xl font-bold text-slate-900">
-          Research Diagrams
-        </h3>
-        <div className="mt-5 grid gap-6 md:grid-cols-2">
-          {scope.images.map((img) => (
-            <figure key={img.src} className="card p-3">
-              <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-slate-100">
-                <Image
-                  src={img.src}
-                  alt={img.caption}
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-              <figcaption className="mt-3 text-center text-sm font-medium text-slate-600">
-                {img.caption}
-              </figcaption>
-            </figure>
-          ))}
-        </div>
-        <p className="mt-4 text-center text-xs text-slate-400">
-          Place these images in <code>/public/images/scope/</code>.
-        </p>
       </div>
     </div>
   );
