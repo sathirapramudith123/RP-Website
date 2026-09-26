@@ -1,25 +1,28 @@
-// ============================================================================
-//  EDIT THIS FILE ONLY — all website text lives here.
-//  Replace every value marked  // TODO  with your real research details.
-//  The whole site updates automatically when you change this file.
-// ============================================================================
-
 export const site = {
-  projectId: "R26-IT-139", // TODO: your project / group ID
-  title: "Smart Merchant Support Platform for Agency Banking and Procurement",
+  projectId: "R26-IT-139",
+  title: "Explainable AI for SME Credit & Agency Banking Risk Management", // TODO: Real project title
   subtitle:
-    "A Digital Platform with Explainable Machine Learning for Rural Sri Lankan Micro-Merchants",
-  degree: "BSc (Hons) in Information Technology",
-  module: "IT4010 — Research Project",
-  university: "Sri Lanka Institute of Information Technology (SLIIT)", // TODO: confirm
-  year: "2026",
+    "A machine learning research project combining credit readiness scoring, demand forecasting, procurement risk, and agency banking analytics — each explained with SHAP.", // TODO: Real subtitle
+  module: "Research Project", // TODO: e.g. "IT4010 - Research Project"
+  year: 2026, // TODO: Real year
+  university: "SLIIT", // TODO: Real university/faculty name
 };
 
+export const nav = [
+  { href: "/", label: "Home" },
+  { href: "/scope", label: "Domain" },
+  { href: "/milestones", label: "Milestones" },
+  { href: "/downloads", label: "Documents" },
+  { href: "/presentations", label: "Presentations" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+];
+
 export const abstract = {
-  heading: "Project Overview",
+  heading: "Project Overview", // TODO: Real heading
   paragraphs: [
-    "Rural micro-merchants in Sri Lanka manage their businesses on paper and have limited access to formal banking or digital tools. This research presents a modular digital platform that combines everyday business management — sales, inventory, suppliers, procurement, and agency banking — with four explainable machine-learning components.",
-    "Each machine-learning component is paired with SHAP-based explanations, so the platform not only produces a prediction but shows why. This makes the recommendations transparent and auditable for a non-technical merchant, forming the unifying research contribution of Explainable AI applied across four distinct decision problems.",
+    "TODO: Replace with the first paragraph of your project abstract, describing the problem domain and motivation.",
+    "TODO: Replace with the second paragraph, describing your proposed approach and expected contribution.",
   ],
 };
 
@@ -27,174 +30,240 @@ export const components = [
   {
     id: "C1",
     icon: "💳",
-    title: "Credit Readiness",
     task: "Classification",
-    desc: "Scores a merchant's readiness for a loan from their financial behaviour.",
-    metric: "Test Accuracy 0.83 · ROC-AUC 0.91",
+    title: "Credit Readiness Component",
+    desc: "TODO: Short description of the credit readiness ML component.", // TODO
+    metric: "TODO: e.g. Accuracy 92%",
   },
   {
     id: "C2",
     icon: "📈",
-    title: "Demand Forecast",
-    task: "Regression",
-    desc: "Predicts item demand to support proactive stock management.",
-    metric: "R² 0.93 · MAE ~22",
+    task: "Forecasting",
+    title: "Demand Forecast Component",
+    desc: "TODO: Short description of the demand forecasting ML component.", // TODO
+    metric: "TODO: e.g. MAPE 8%",
   },
   {
     id: "C3",
-    icon: "🛒",
-    title: "Procurement Decision",
-    task: "Classification",
-    desc: "Advises whether to buy stock now or wait, from price signals.",
-    metric: "Accuracy 0.74 · ROC-AUC 0.82",
+    icon: "📦",
+    task: "Risk Analysis",
+    title: "Procurement Component",
+    desc: "TODO: Short description of the procurement risk ML component.", // TODO
+    metric: "TODO: e.g. F1 0.89",
   },
   {
     id: "C4",
-    icon: "🛡️",
-    title: "Banking Anomaly Detection",
-    task: "Imbalanced classification",
-    desc: "Flags suspicious agency-banking transactions.",
-    metric: "ROC-AUC 0.91 · PR-AUC 0.52",
+    icon: "🏦",
+    task: "Classification",
+    title: "Agency Banking Component",
+    desc: "TODO: Short description of the agency banking ML component.", // TODO
+    metric: "TODO: e.g. Accuracy 90%",
   },
 ];
 
 export const scope = {
   intro:
-    "The platform is built as three services — a mobile/web frontend, a Node backend, and a Python machine-learning service — that together deliver four explainable decision-support components for rural micro-merchants.",
-  images: [
-    { src: "/images/scope/research_gap.svg", caption: "Research Gap" },
-    { src: "/images/scope/literature_survey.svg", caption: "Literature Survey" },
-    { src: "/images/scope/methodology.svg", caption: "Methodology" },
-    { src: "/images/scope/technologies_used.svg", caption: "Technologies Used" },
-  ],
+    "TODO: One or two sentences introducing the research scope and approach.", // TODO
   objectives: [
-    "Develop four explainable ML components for the core merchant decision points.",
-    "Apply SHAP explainability uniformly across all components as the research novelty.",
-    "Build an offline-capable platform suited to low-connectivity rural environments.",
-    "Validate each model with rigorous evaluation and document data limitations honestly.",
+    "TODO: Objective 1 — e.g. Develop an explainable credit readiness scoring model.",
+    "TODO: Objective 2 — e.g. Build a demand forecasting model for SME inventory planning.",
+    "TODO: Objective 3 — e.g. Design a procurement risk assessment component.",
+    "TODO: Objective 4 — e.g. Implement an agency banking risk classification model.",
+  ],
+  images: [
+    { src: "/images/scope/literature_survey.svg", caption: "Literature Survey" }, // TODO: add file to public/images/scope/
+    { src: "/images/scope/research_gap.svg", caption: "Research Gap" }, // TODO: add file to public/images/scope/
+    { src: "/images/scope/technologies_used.svg", caption: "Technologies Used" }, // TODO: add file to public/images/scope/
+    { src: "/images/scope/methodology.svg", caption: "Methodology" }, // TODO: add file to public/images/scope/
   ],
 };
 
 export const milestones = [
   {
-    phase: "Project Proposal",
-    date: "2025", // TODO
-    status: "done", // "done" | "current" | "upcoming"
-    items: ["Problem identification", "Literature survey", "Research gap defined"],
-  },
-  {
-    phase: "ML Pipeline Development",
-    date: "2025", // TODO
+    phase: "Proposal",
+    date: "TODO: e.g. Jan 2026", // TODO
     status: "done",
     items: [
-      "Data collection & preparation (real + real-anchored)",
-      "Four models built, validated, and SHAP-explained",
+      "TODO: e.g. Topic selection and approval",
+      "TODO: e.g. Proposal document submitted",
     ],
   },
   {
-    phase: "System Implementation",
-    date: "2026", // TODO
-    status: "done",
-    items: [
-      "Node + Supabase backend",
-      "Python ML microservice",
-      "Web & mobile frontends",
-    ],
-  },
-  {
-    phase: "Evaluation & Thesis",
-    date: "2026", // TODO
+    phase: "Research & Design",
+    date: "TODO: e.g. Mar 2026", // TODO
     status: "current",
-    items: ["Model evaluation", "Final documentation", "Viva preparation"],
+    items: [
+      "TODO: e.g. Literature survey completed",
+      "TODO: e.g. System architecture designed",
+    ],
+  },
+  {
+    phase: "Implementation",
+    date: "TODO: e.g. Jun 2026", // TODO
+    status: "upcoming",
+    items: [
+      "TODO: e.g. Model development for all four components",
+      "TODO: e.g. Integration and testing",
+    ],
+  },
+  {
+    phase: "Final Evaluation",
+    date: "TODO: e.g. Sep 2026", // TODO
+    status: "upcoming",
+    items: [
+      "TODO: e.g. Final report submission",
+      "TODO: e.g. Viva / presentation",
+    ],
   },
 ];
 
 export const downloads = [
   {
-    title: "Project Proposal",
-    desc: "Initial research proposal document.",
-    href: "/downloads/proposal.pdf", // TODO: add the file
-    available: false, // set true once the file exists
-  },
-  {
-    title: "Final Thesis",
-    desc: "Complete research thesis.",
-    href: "/downloads/thesis.pdf",
+    title: "Research Proposal",
+    desc: "Initial project proposal document.", // TODO
+    href: "/downloads/proposal.pdf",
     available: false,
   },
   {
-    title: "Research Paper",
-    desc: "Conference / journal paper.",
-    href: "/downloads/paper.pdf",
+    title: "Progress Report",
+    desc: "Mid-project progress report.", // TODO
+    href: "/downloads/progress-report.pdf",
+    available: false,
+  },
+  {
+    title: "Final Report",
+    desc: "Final thesis / research report.", // TODO
+    href: "/downloads/final-report.pdf",
+    available: false,
+  },
+];
+
+export const presentations = [
+  {
+    title: "Proposal Presentation",
+    desc: "Slides used for the proposal defense.", // TODO
+    href: "/presentations/proposal.pdf",
+    available: false,
+  },
+  {
+    title: "Progress Presentation",
+    desc: "Slides used for the mid-evaluation.", // TODO
+    href: "/presentations/progress.pdf",
     available: false,
   },
   {
     title: "Final Presentation",
-    desc: "Viva presentation slides.",
-    href: "/downloads/presentation.pdf",
+    desc: "Slides used for the final viva.", // TODO
+    href: "/presentations/final.pdf",
     available: false,
   },
 ];
 
+export const contact = {
+  generalEmail: "LankaLink.team@example.com", // TODO: Real team email
+  supervisorEmail: "shanta.y@sliit.lk", // TODO: Real supervisor email (kept in sync with team.supervisors[0].email)
+  institution: "Sri Lanka Institute of Information Technology (SLIIT)", // TODO
+  subjects: [
+    "Select a subject",
+    "General Inquiry",
+    "Research Collaboration",
+    "Technical Support",
+    "Documentation Request",
+    "Collaboration",
+    "Feedback",
+    "Other",
+  ],
+};
+
 export const team = {
   supervisors: [
     {
-      name: "Supervisor Name", // TODO
+      name: "Dr. Shanta Rajapaksha Yapa",
       role: "Supervisor",
-      photo: "/images/supervisor.svg",
-      affiliation: "Faculty of Computing, SLIIT", // TODO
+      photo: "/images/supervisor.png",
+      university: "Sri Lanka Institute of Information Technology",
+      faculty: "Faculty of Business", // TODO
+      department: "Department of Information Management",
+      email: "shanta.y@sliit.lk",
+      linkType: "scholar",
+      link: "https://scholar.google.com/citations?user=hX9X2RYAAAAJ&hl=en",
     },
     {
-      name: "Co-Supervisor Name", // TODO
+      name: "Ms. Suwani Hettiarachchi",
       role: "Co-Supervisor",
-      photo: "/images/cosupervisor.svg",
-      affiliation: "Faculty of Computing, SLIIT", // TODO
+      photo: "/images/cosupervisor.png",
+      university: "Sri Lanka Institute of Information Technology",
+      faculty: "Faculty of Business",
+      department: "Computer Systems Engineering",
+      email: "suwani.h@sliit.lk",
+      linkType: "scholar",
+      link: "https://scholar.google.com/citations?user=udSXe-MAAAAJ&hl=en",
     },
   ],
   members: [
     {
-      name: "Member One", // TODO
-      studentId: "ITxxxxxxxx", // TODO
-      role: "Credit Readiness Component", // TODO
-      photo: "/images/m1.svg",
-      github: "https://github.com/MaheshaJayaruwani",
+      name: "Aponsu G.M.P.S",
+      studentId: "IT22266682",
+      role: "Group Member",
+      componentRole: "Demand Forecast Component",
+      description:
+        "TODO: One or two sentences on what this component does and this member's contribution.",
+      tags: ["Forecasting", "Time Series", "TODO Tag"],
+      photo: "/images/m2.png",
+      university: "Sri Lanka Institute of Information Technology",
+      faculty: "Faculty of Computing",
+      department: "Computer Systems Engineering", // TODO: confirm
+      email: "parameeaponsu@icloud.com",
+      linkType: "linkedin",
+      link: "https://www.linkedin.com/in/paramee-aponsu-61b43836a/",
     },
     {
-      name: "Member Two", // TODO
-      studentId: "ITxxxxxxxx",
-      role: "Demand Forecast Component",
-      photo: "/images/m2.svg",
-      github: "https://github.com/ParameeAponsu",
+      name: "PRAMUDITH K G S",
+      studentId: "IT22152978",
+      role: "Group Member",
+      componentRole: "Inventory and Supplier Management Component",
+      description:
+        "TODO: One or two sentences on what this component does and this member's contribution.",
+      tags: ["Risk Analysis", "TODO Tag"],
+      photo: "/images/m3.png",
+      university: "Sri Lanka Institute of Information Technology",
+      faculty: "Faculty of Computing",
+      department: "Computer Systems Engineering", // TODO: confirm
+      email: "sathirapramudith1@gmail.com",
+      linkType: "linkedin",
+      link: "https://www.linkedin.com/in/sathira-pramudith-805284318/",
     },
     {
-      name: "Member Three", // TODO
-      studentId: "ITxxxxxxxx",
-      role: "Procurement Component",
-      photo: "/images/m3.svg",
-      github: "https://github.com/Leshvi",
+      name: "Ruwani P A M J",
+      studentId: "IT22268730",
+      role: "Group Member",
+      componentRole: "Smart Procurement &  decision Support Component",
+      description:
+        "TODO: One or two sentences on what this component does and this member's contribution.",
+      tags: ["Classification", "SHAP", "TODO Tag"],
+      photo: "/images/m1.png",
+      university: "Sri Lanka Institute of Information Technology",
+      faculty: "Faculty of Computing",
+      department: "Computer Systems Engineering", // TODO: confirm
+      email: "maheshajayaruwani@gmail.com",
+      linkType: "linkedin",
+      link: "https://www.linkedin.com/in/mahesha-jayaruwani-0507a4362/",
     },
     {
-      name: "Member Four", // TODO
-      studentId: "ITxxxxxxxx",
-      role: "Agency Banking Component",
-      photo: "/images/m4.svg",
-      github: "https://github.com/sathirapramudith123",
+      name: "Karunaweera L.M",
+      studentId: "IT22050212",
+      role: "Group Leader",
+      componentRole: "Simulated Agency Banking Component",
+      description:
+        "TODO: One or two sentences on what this component does and this member's contribution.",
+      tags: ["Classification", "TODO Tag"],
+      photo: "/images/m4.png",
+      university: "Sri Lanka Institute of Information Technology",
+      faculty: "Faculty of Computing",
+      department: "Computer Systems Engineering", // TODO: confirm
+      email: "lakshithakarunaweera@gmail.com",
+      linkType: "linkedin",
+      link: "https://www.linkedin.com/in/lakshithakarunaweera/",
     },
   ],
 };
-
-export const contact = {
-  email: "group.email@example.com", // TODO
-  university: "Sri Lanka Institute of Information Technology (SLIIT)", // TODO
-  address: "New Kandy Road, Malabe, Sri Lanka", // TODO
-  githubOrg: "https://github.com/", // TODO
-};
-
-export const nav = [
-  { label: "Home", href: "/" },
-  { label: "Scope", href: "/scope" },
-  { label: "Milestones", href: "/milestones" },
-  { label: "About Us", href: "/about" },
-  { label: "Downloads", href: "/downloads" },
-  { label: "Contact", href: "/contact" },
-];
