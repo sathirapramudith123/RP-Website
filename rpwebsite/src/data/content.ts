@@ -1,5 +1,5 @@
 export const site = {
-  projectId: "R26-IT-139",
+  projectId: "Lanak Link",
   title: "Explainable AI for SME Credit & Agency Banking Risk Management", // TODO: Real project title
   subtitle:
     "A machine learning research project combining credit readiness scoring, demand forecasting, procurement risk, and agency banking analytics — each explained with SHAP.", // TODO: Real subtitle
@@ -64,12 +64,51 @@ export const components = [
 export const scope = {
   intro:
     "TODO: One or two sentences introducing the research scope and approach.", // TODO
+
+  literatureSurvey: {
+    heading: "Literature Survey",
+    paragraphs: [
+      "TODO: Summarize existing research and systems related to your problem domain. What has already been done, and by whom?",
+      "TODO: Add a second paragraph if needed, covering another angle of prior work (e.g. academic research vs. industry tools).",
+    ],
+  },
+
+  researchGap: {
+    heading: "Research Gap",
+    paragraphs: [
+      "TODO: Explain what is missing in existing solutions — the specific gap your research fills.",
+    ],
+  },
+
+  researchProblem: {
+    heading: "Research Problem",
+    paragraphs: [
+      "TODO: State the core problem your research addresses, in one or two clear sentences.",
+    ],
+  },
+
   objectives: [
     "TODO: Objective 1 — e.g. Develop an explainable credit readiness scoring model.",
     "TODO: Objective 2 — e.g. Build a demand forecasting model for SME inventory planning.",
     "TODO: Objective 3 — e.g. Design a procurement risk assessment component.",
     "TODO: Objective 4 — e.g. Implement an agency banking risk classification model.",
   ],
+
+  methodology: {
+    heading: "Methodology",
+    paragraphs: [
+      "TODO: Describe your overall research approach and process — data collection, model development, evaluation, etc.",
+    ],
+  },
+
+  technologies: [
+    { name: "Python", category: "Language" }, // TODO: real tech stack
+    { name: "TensorFlow", category: "ML Framework" }, // TODO
+    { name: "SHAP", category: "Explainability" }, // TODO
+    { name: "Next.js", category: "Frontend" }, // TODO
+    { name: "TODO Tech", category: "TODO Category" }, // TODO
+  ],
+
   images: [
     { src: "/images/scope/literature_survey.svg", caption: "Literature Survey" }, // TODO: add file to public/images/scope/
     { src: "/images/scope/research_gap.svg", caption: "Research Gap" }, // TODO: add file to public/images/scope/
@@ -140,35 +179,60 @@ export const downloads = [
 
 export const presentations = [
   {
-    title: "Proposal Presentation",
-    desc: "Slides used for the proposal defense.", // TODO
+    title: "Lanak Link",
+    subtitle: "SME Credit & Agency Banking Risk Platform", // TODO
+    tag: "Proposal Presentation",
+    status: "available", // "available" | "upcoming"
+    desc: "Introduction to Lanak Link, project motivation, research problem, objectives, scope, methodology, and expected outcomes.", // TODO
+    stage: "Proposal Stage",
+    fileType: "PDF",
+    actionLabel: "Open PDF",
     href: "/presentations/proposal.pdf",
     available: false,
   },
   {
-    title: "Progress Presentation",
-    desc: "Slides used for the mid-evaluation.", // TODO
-    href: "/presentations/progress.pdf",
+    title: "Lanak Link PP1",
+    subtitle: "Model Prototypes and Early Components", // TODO
+    tag: "Progress Presentation 1",
+    status: "available",
+    desc: "Demonstrates the initial model pipelines, credit scoring flow, demand forecasting prototype, and early dashboard components.", // TODO
+    stage: "Progress Stage",
+    fileType: "PPT",
+    actionLabel: "Open PPT",
+    href: "/presentations/progress-1.pptx",
     available: false,
   },
   {
-    title: "Final Presentation",
-    desc: "Slides used for the final viva.", // TODO
+    title: "Lanak Link PP2",
+    subtitle: "Integration, Explainability and Dashboards", // TODO
+    tag: "Progress Presentation 2",
+    status: "available",
+    desc: "Covers integrating all four ML components, SHAP explainability layer, dashboards, testing progress, and evaluation preparation.", // TODO
+    stage: "Progress Stage",
+    fileType: "PPT",
+    actionLabel: "Open PPT",
+    href: "/presentations/progress-2.pptx",
+    available: false,
+  },
+  {
+    title: "Lanak Link Final",
+    subtitle: "Final Research Presentation", // TODO
+    tag: "Final Presentation",
+    status: "upcoming",
+    desc: "Final research presentation slide deck covering the completed Lanak Link system, evaluation results, conclusions, and future enhancements. This is currently upcoming.", // TODO
+    stage: "Final Stage",
+    fileType: "Upcoming",
+    actionLabel: "Open Folder",
     href: "/presentations/final.pdf",
     available: false,
   },
 ];
-
 export const contact = {
-  generalEmail: "LankaLink.team@example.com", // TODO: Real team email
+  generalEmail: "team@example.com", // TODO: Real team email
   supervisorEmail: "shanta.y@sliit.lk", // TODO: Real supervisor email (kept in sync with team.supervisors[0].email)
   institution: "Sri Lanka Institute of Information Technology (SLIIT)", // TODO
   subjects: [
-    "Select a subject",
     "General Inquiry",
-    "Research Collaboration",
-    "Technical Support",
-    "Documentation Request",
     "Collaboration",
     "Feedback",
     "Other",
@@ -267,3 +331,183 @@ export const team = {
     },
   ],
 };
+
+
+
+export const documentSections = [
+  {
+    icon: "📑",
+    title: "Research Paper",
+    desc: "Official research paper prepared for the Lanak Link research project.",
+    documents: [
+      {
+        fileType: "PDF",
+        title: "Lanak Link Research Paper",
+        desc: "Research paper presenting the Lanak Link project background, research problem, methodology, implementation, evaluation, results, and conclusions.", // TODO
+        tag: "Research Paper",
+        status: "upcoming", // "available" | "upcoming"
+        actionLabel: "Open PDF",
+        openHref: "", // TODO: Google Drive "view" link
+        downloadHref: "", // TODO: Google Drive "download" link
+      },
+    ],
+  },
+  {
+    icon: "📁",
+    title: "Group Research Documents",
+    desc: "Group-level research documents prepared for the complete Lanak Link project.",
+    documents: [
+      {
+        fileType: "PDF",
+        title: "Group Thesis Report",
+        desc: "Final group thesis report covering the complete Lanak Link research system, methodology, implementation, evaluation, results, conclusions, and future enhancements.", // TODO
+        tag: "Final Report",
+        status: "upcoming",
+        actionLabel: "Open PDF",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+    ],
+  },
+  {
+    icon: "📊",
+    title: "Presentation Slide Decks",
+    desc: "Presentation files prepared during the Lanak Link research project.",
+    documents: [
+      {
+        fileType: "PDF",
+        title: "Proposal Presentation PDF",
+        desc: "Initial project proposal presentation covering the research problem, objectives, scope, methodology, and expected outcomes.", // TODO
+        tag: "Proposal Presentation",
+        status: "available",
+        actionLabel: "Open PDF",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+      {
+        fileType: "PPT",
+        title: "Progress Presentation 1 PPT",
+        desc: "Progress presentation 1 slide deck explaining early model prototypes and initial component development.", // TODO
+        tag: "Progress Presentation 1",
+        status: "available",
+        actionLabel: "Open PPT",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+      {
+        fileType: "PPT",
+        title: "Progress Presentation 2 PPT",
+        desc: "Progress presentation 2 slide deck explaining integration, explainability, dashboards, and evaluation preparation.", // TODO
+        tag: "Progress Presentation 2",
+        status: "available",
+        actionLabel: "Open PPT",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+      {
+        fileType: "PPT",
+        title: "Final Presentation PPT",
+        desc: "Final research presentation slide deck covering the completed Lanak Link system, evaluation results, conclusions, and future enhancements.", // TODO
+        tag: "Final Presentation",
+        status: "upcoming",
+        actionLabel: "Open PPT",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+    ],
+  },
+  {
+    icon: "📄",
+    title: "Individual Proposal Reports",
+    desc: "Individual proposal reports prepared by each Lanak Link research team member.",
+    documents: [
+      {
+        fileType: "PDF",
+        title: "APONSU G.M.P.S - Individual Proposal Report",
+        desc: "Research component: Demand Forecast Component.", // TODO
+        tag: "IT22266682",
+        status: "upcoming",
+        actionLabel: "View Report",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+      {
+        fileType: "PDF",
+        title: "PRAMUDITH K.G.S - Individual Proposal Report",
+        desc: "Research component: Inventory and Supplier Management Component.", // TODO
+        tag: "IT22152978",
+        status: "upcoming",
+        actionLabel: "View Report",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+      {
+        fileType: "PDF",
+        title: "RUWANI P.A.M.J - Individual Proposal Report",
+        desc: "Research component: Smart Procurement & Decision Support Component.", // TODO
+        tag: "IT22268730",
+        status: "upcoming",
+        actionLabel: "View Report",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+      {
+        fileType: "PDF",
+        title: "KARUNAWEERA L.M - Individual Proposal Report",
+        desc: "Research component: Simulated Agency Banking Component.", // TODO
+        tag: "IT22050212",
+        status: "upcoming",
+        actionLabel: "View Report",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+    ],
+  },
+  {
+    icon: "📚",
+    title: "Individual Thesis Reports",
+    desc: "Final individual thesis reports prepared for each Lanak Link research component.",
+    documents: [
+      {
+        fileType: "PDF",
+        title: "APONSU G.M.P.S - Individual Thesis Report",
+        desc: "Individual thesis report for the Demand Forecast Component.", // TODO
+        tag: "IT22266682",
+        status: "upcoming",
+        actionLabel: "Open PDF",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+      {
+        fileType: "PDF",
+        title: "PRAMUDITH K.G.S - Individual Thesis Report",
+        desc: "Individual thesis report for the Inventory and Supplier Management Component.", // TODO
+        tag: "IT22152978",
+        status: "upcoming",
+        actionLabel: "Open PDF",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+      {
+        fileType: "PDF",
+        title: "RUWANI P.A.M.J - Individual Thesis Report",
+        desc: "Individual thesis report for the Smart Procurement & Decision Support Component.", // TODO
+        tag: "IT22268730",
+        status: "upcoming",
+        actionLabel: "Open PDF",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+      {
+        fileType: "PDF",
+        title: "KARUNAWEERA L.M - Individual Thesis Report",
+        desc: "Individual thesis report for the Simulated Agency Banking Component.", // TODO
+        tag: "IT22050212",
+        status: "upcoming",
+        actionLabel: "Open PDF",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+    ],
+  },
+];
