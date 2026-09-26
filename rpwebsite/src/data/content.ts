@@ -331,3 +331,183 @@ export const team = {
     },
   ],
 };
+
+
+
+export const documentSections = [
+  {
+    icon: "📑",
+    title: "Research Paper",
+    desc: "Official research paper prepared for the Lanak Link research project.",
+    documents: [
+      {
+        fileType: "PDF",
+        title: "Lanak Link Research Paper",
+        desc: "Research paper presenting the Lanak Link project background, research problem, methodology, implementation, evaluation, results, and conclusions.", // TODO
+        tag: "Research Paper",
+        status: "upcoming", // "available" | "upcoming"
+        actionLabel: "Open PDF",
+        openHref: "", // TODO: Google Drive "view" link
+        downloadHref: "", // TODO: Google Drive "download" link
+      },
+    ],
+  },
+  {
+    icon: "📁",
+    title: "Group Research Documents",
+    desc: "Group-level research documents prepared for the complete Lanak Link project.",
+    documents: [
+      {
+        fileType: "PDF",
+        title: "Group Thesis Report",
+        desc: "Final group thesis report covering the complete Lanak Link research system, methodology, implementation, evaluation, results, conclusions, and future enhancements.", // TODO
+        tag: "Final Report",
+        status: "upcoming",
+        actionLabel: "Open PDF",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+    ],
+  },
+  {
+    icon: "📊",
+    title: "Presentation Slide Decks",
+    desc: "Presentation files prepared during the Lanak Link research project.",
+    documents: [
+      {
+        fileType: "PDF",
+        title: "Proposal Presentation PDF",
+        desc: "Initial project proposal presentation covering the research problem, objectives, scope, methodology, and expected outcomes.", // TODO
+        tag: "Proposal Presentation",
+        status: "available",
+        actionLabel: "Open PDF",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+      {
+        fileType: "PPT",
+        title: "Progress Presentation 1 PPT",
+        desc: "Progress presentation 1 slide deck explaining early model prototypes and initial component development.", // TODO
+        tag: "Progress Presentation 1",
+        status: "available",
+        actionLabel: "Open PPT",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+      {
+        fileType: "PPT",
+        title: "Progress Presentation 2 PPT",
+        desc: "Progress presentation 2 slide deck explaining integration, explainability, dashboards, and evaluation preparation.", // TODO
+        tag: "Progress Presentation 2",
+        status: "available",
+        actionLabel: "Open PPT",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+      {
+        fileType: "PPT",
+        title: "Final Presentation PPT",
+        desc: "Final research presentation slide deck covering the completed Lanak Link system, evaluation results, conclusions, and future enhancements.", // TODO
+        tag: "Final Presentation",
+        status: "upcoming",
+        actionLabel: "Open PPT",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+    ],
+  },
+  {
+    icon: "📄",
+    title: "Individual Proposal Reports",
+    desc: "Individual proposal reports prepared by each Lanak Link research team member.",
+    documents: [
+      {
+        fileType: "PDF",
+        title: "APONSU G.M.P.S - Individual Proposal Report",
+        desc: "Research component: Demand Forecast Component.", // TODO
+        tag: "IT22266682",
+        status: "upcoming",
+        actionLabel: "View Report",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+      {
+        fileType: "PDF",
+        title: "PRAMUDITH K.G.S - Individual Proposal Report",
+        desc: "Research component: Inventory and Supplier Management Component.", // TODO
+        tag: "IT22152978",
+        status: "upcoming",
+        actionLabel: "View Report",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+      {
+        fileType: "PDF",
+        title: "RUWANI P.A.M.J - Individual Proposal Report",
+        desc: "Research component: Smart Procurement & Decision Support Component.", // TODO
+        tag: "IT22268730",
+        status: "upcoming",
+        actionLabel: "View Report",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+      {
+        fileType: "PDF",
+        title: "KARUNAWEERA L.M - Individual Proposal Report",
+        desc: "Research component: Simulated Agency Banking Component.", // TODO
+        tag: "IT22050212",
+        status: "upcoming",
+        actionLabel: "View Report",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+    ],
+  },
+  {
+    icon: "📚",
+    title: "Individual Thesis Reports",
+    desc: "Final individual thesis reports prepared for each Lanak Link research component.",
+    documents: [
+      {
+        fileType: "PDF",
+        title: "APONSU G.M.P.S - Individual Thesis Report",
+        desc: "Individual thesis report for the Demand Forecast Component.", // TODO
+        tag: "IT22266682",
+        status: "upcoming",
+        actionLabel: "Open PDF",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+      {
+        fileType: "PDF",
+        title: "PRAMUDITH K.G.S - Individual Thesis Report",
+        desc: "Individual thesis report for the Inventory and Supplier Management Component.", // TODO
+        tag: "IT22152978",
+        status: "upcoming",
+        actionLabel: "Open PDF",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+      {
+        fileType: "PDF",
+        title: "RUWANI P.A.M.J - Individual Thesis Report",
+        desc: "Individual thesis report for the Smart Procurement & Decision Support Component.", // TODO
+        tag: "IT22268730",
+        status: "upcoming",
+        actionLabel: "Open PDF",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+      {
+        fileType: "PDF",
+        title: "KARUNAWEERA L.M - Individual Thesis Report",
+        desc: "Individual thesis report for the Simulated Agency Banking Component.", // TODO
+        tag: "IT22050212",
+        status: "upcoming",
+        actionLabel: "Open PDF",
+        openHref: "", // TODO
+        downloadHref: "", // TODO
+      },
+    ],
+  },
+];
