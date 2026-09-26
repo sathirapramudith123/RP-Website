@@ -179,25 +179,54 @@ export const downloads = [
 
 export const presentations = [
   {
-    title: "Proposal Presentation",
-    desc: "Slides used for the proposal defense.", // TODO
+    title: "Lanak Link",
+    subtitle: "SME Credit & Agency Banking Risk Platform", // TODO
+    tag: "Proposal Presentation",
+    status: "available", // "available" | "upcoming"
+    desc: "Introduction to Lanak Link, project motivation, research problem, objectives, scope, methodology, and expected outcomes.", // TODO
+    stage: "Proposal Stage",
+    fileType: "PDF",
+    actionLabel: "Open PDF",
     href: "/presentations/proposal.pdf",
     available: false,
   },
   {
-    title: "Progress Presentation",
-    desc: "Slides used for the mid-evaluation.", // TODO
-    href: "/presentations/progress.pdf",
+    title: "Lanak Link PP1",
+    subtitle: "Model Prototypes and Early Components", // TODO
+    tag: "Progress Presentation 1",
+    status: "available",
+    desc: "Demonstrates the initial model pipelines, credit scoring flow, demand forecasting prototype, and early dashboard components.", // TODO
+    stage: "Progress Stage",
+    fileType: "PPT",
+    actionLabel: "Open PPT",
+    href: "/presentations/progress-1.pptx",
     available: false,
   },
   {
-    title: "Final Presentation",
-    desc: "Slides used for the final viva.", // TODO
+    title: "Lanak Link PP2",
+    subtitle: "Integration, Explainability and Dashboards", // TODO
+    tag: "Progress Presentation 2",
+    status: "available",
+    desc: "Covers integrating all four ML components, SHAP explainability layer, dashboards, testing progress, and evaluation preparation.", // TODO
+    stage: "Progress Stage",
+    fileType: "PPT",
+    actionLabel: "Open PPT",
+    href: "/presentations/progress-2.pptx",
+    available: false,
+  },
+  {
+    title: "Lanak Link Final",
+    subtitle: "Final Research Presentation", // TODO
+    tag: "Final Presentation",
+    status: "upcoming",
+    desc: "Final research presentation slide deck covering the completed Lanak Link system, evaluation results, conclusions, and future enhancements. This is currently upcoming.", // TODO
+    stage: "Final Stage",
+    fileType: "Upcoming",
+    actionLabel: "Open Folder",
     href: "/presentations/final.pdf",
     available: false,
   },
 ];
-
 export const contact = {
   generalEmail: "team@example.com", // TODO: Real team email
   supervisorEmail: "shanta.y@sliit.lk", // TODO: Real supervisor email (kept in sync with team.supervisors[0].email)
