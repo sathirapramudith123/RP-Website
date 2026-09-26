@@ -184,65 +184,27 @@ The project currently includes the following pages:
 ```text
 RP-Website/
 │
-├── rpwebsite/
-│   │
-│   ├── public/
-│   │   ├── favicon.svg
-│   │   ├── file.svg
-│   │   ├── globe.svg
-│   │   ├── next.svg
-│   │   ├── vercel.svg
-│   │   └── window.svg
-│   │
-│   ├── src/
-│   │   ├── app/
-│   │   │   ├── about/
-│   │   │   │   └── page.tsx
-│   │   │   │
-│   │   │   ├── contact/
-│   │   │   │   └── page.tsx
-│   │   │   │
-│   │   │   ├── downloads/
-│   │   │   │   └── page.tsx
-│   │   │   │
-│   │   │   ├── milestones/
-│   │   │   │   └── page.tsx
-│   │   │   │
-│   │   │   ├── scope/
-│   │   │   │   └── page.tsx
-│   │   │   │
-│   │   │   ├── favicon.ico
-│   │   │   ├── globals.css
-│   │   │   ├── layout.tsx
-│   │   │   ├── not-found.tsx
-│   │   │   └── page.tsx
-│   │   │
-│   │   ├── components/
-│   │   │   ├── Footer.tsx
-│   │   │   ├── HeroIllustration.tsx
-│   │   │   ├── Layout.tsx
-│   │   │   ├── Navbar.tsx
-│   │   │   └── SectionHeader.tsx
-│   │   │
-│   │   ├── data/
-│   │   │   └── content.ts
-│   │   │
-│   │   └── utils/
-│   │       └── cn.ts
-│   │
-│   ├── .gitignore
-│   ├── eslint.config.mjs
-│   ├── next-env.d.ts
-│   ├── next.config.ts
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── postcss.config.mjs
-│   ├── tailwind.config.js
-│   └── tsconfig.json
+├── public/
 │
-├── .gitignore
-├── .gitKeep
+├── src/
+│   ├── app/
+│   │   ├── about/
+│   │   ├── contact/
+│   │   ├── downloads/
+│   │   ├── milestones/
+│   │   ├── scope/
+│   │   └── page.tsx
+│   │
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── Footer.tsx
+│   │   └── Layout.tsx
+│   │
+│   └── data/
+│       └── content.ts
+│
 ├── package.json
+├── next.config.ts
 └── README.md
 ```
 
